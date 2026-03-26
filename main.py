@@ -7,9 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-# Initialize Gemini 2.0 Flash
+# Initialize Gemini 1.5 Flash
 # Use the exact string from your terminal output
-model = genai.GenerativeModel('gemini-2.0-flash')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 def load_all_data():
     """Loads JSON and Markdown data from the directory."""
